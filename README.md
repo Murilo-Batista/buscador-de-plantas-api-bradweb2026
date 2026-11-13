@@ -1,4 +1,4 @@
-# Atividade da matéria Desenvolvimento Web-Front End - Professora Ana Paula Muller Giancoli, ADS IFSPBRA
+Atividade da matéria Desenvolvimento Web-Front End - Professora Ana Paula Muller Giancoli, ADS IFSPBRA
 
 # React + Vite + API Web Gratuita
 
