@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 0 2.5rem;
+    background-color: #315b35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* FOOTER TEXTO */
+
+.footer h5 {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* FOOTER LINK */
+
+nav a{
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}

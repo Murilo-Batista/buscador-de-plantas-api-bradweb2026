@@ -1,0 +1,8 @@
+.imagem{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    object-position: center 39%;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+}

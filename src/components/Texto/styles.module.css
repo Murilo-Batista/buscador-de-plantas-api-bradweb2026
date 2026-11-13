@@ -1,0 +1,59 @@
+/* TEXTO */
+
+.texto {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    padding: 15px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.texto h1, 
+.texto h2 {
+    max-width: 100%;
+    color: #315b35;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg, #618f33, #dba800);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    overflow-wrap: break-word;
+}
+
+.texto h1 {
+    font-size: clamp(18px, 3vw, 32px);
+    line-height: 1.2;
+}
+
+.texto h2 {
+    font-size: clamp(15px, 2.2vw, 23px);
+    line-height: 1.3;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+    .texto {
+        padding: 12px 5%;
+        gap: 6px;
+    }
+
+    .texto h1 {
+        font-size: clamp(17px, 4.5vw, 25px);
+    }
+
+    .texto h2 {
+        font-size: clamp(14px, 3.5vw, 19px);
+    }
+}
+
+   
+
+

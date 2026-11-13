@@ -1,0 +1,294 @@
+.secaoPesquisa{
+  width: 100%;
+  padding: 5px 0 15px;
+}
+
+.formulario {
+  width: 80%;
+  margin: 12px auto 0;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.campoContainer {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 0 44px 0 43px;
+  font-size: 15px;
+  color: #315b35;
+  background: #fff;
+  border: 2px solid #4b7a50;
+  border-radius: 10px;
+  outline: none;
+  transition: all .3s ease;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  background: #f7fbf3;
+  border-color: #315b35;
+  box-shadow: 0 4px 12px rgba(26, 22, 22, .12);
+}
+
+.input::placeholder {
+  color: #71866c;
+}
+
+.iconeBusca {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-55%);
+  color: #4b7a50;
+  font-size: 27px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.limpar {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #71866c;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.botaoBuscar, .botaoMais {
+  border: 0; border-radius: 9px;
+  padding: 0 23px;
+  color: #fff;
+  background: #315b35;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.botaoBuscar:hover, .botaoMais:hover {
+  background: #24472a;
+  transform: translateY(-1px);
+}
+
+.botaoBuscar:disabled, .botaoMais:disabled {
+  opacity: .65;
+  cursor: wait;
+  transform: none;
+}
+
+.cabecalhoResultados {
+  width: 80%;
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.cabecalhoResultados h2 {
+  margin: 0;
+  color: #315b35;
+  font: 700 21px Georgia, serif;
+}
+
+.cabecalhoResultados span {
+  color: #81917d;
+  font-size: 12px;
+}
+
+.estado {
+  margin: 25px auto;
+  text-align: center; 
+  color: #557451;
+  font-size: 14px;
+}
+
+.mensagemErro {
+  width: 80%;
+  margin: 12px auto;
+  padding: 11px 14px;
+  border-left: 3px solid #b65a43;
+  border-radius: 5px;
+  background: #fff4f0;
+  color: #8c3929;
+  font-size: 13px;
+}
+
+.botaoMais {
+  display: block;
+  min-height: 42px;
+  margin: 25px auto 5px;
+  padding: 0 22px;
+}
+
+.fundoModal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(18, 35, 20, .68);
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(210px, .85fr) 1.15fr;
+  width: min(760px, 100%);
+  max-height: min(680px, 90vh);
+  overflow: auto;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(0,0,0,.28);
+  text-align: left;
+}
+  
+.fecharModal {
+  position: absolute;
+  z-index: 2; top: 10px;
+  right: 12px; width: 34px;
+  height: 34px; border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.93);
+  color: #315b35; font-size: 25px;
+  line-height: 1; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.modalImagem {
+  min-height: 300px;
+  background: #edf3e9;
+}
+
+.modalImagem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.modalConteudo {
+  padding: 35px 30px 25px;
+}
+
+.sobretitulo {
+  margin: 0 0 9px;
+  color: #77936b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.modalConteudo h2 {
+  margin: 0 0 5px;
+  color: #315b35;
+  font: 700 25px/1.2 Georgia, serif;
+}
+
+.nomeCientifico {
+  margin: 0 0 23px;
+  color: #758071;
+  font: italic 15px Georgia, serif;
+}
+
+.detalhesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 18px;
+}
+
+.informacao {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #e9eee5;
+}
+
+.informacao span {
+  color: #84917f;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.informacao strong {
+  color: #385c38;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.observacoes {
+  margin-top: 17px;
+  color: #53644f;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.observacoes h3 {
+  margin: 0 0 5px;
+  color: #315b35;
+  font-size: 14px;
+}
+
+.observacoes p {
+  margin: 0; 
+}
+
+.credito {
+  margin: 23px 0 0;
+  color: #9aa396;
+  font-size: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+  .formulario, .cabecalhoResultados {
+    width: 90%;
+  }
+  .formulario {
+    flex-direction: column;
+  }
+  .botaoBuscar {
+    min-height: 44px;
+  }
+  .cabecalhoResultados {
+    margin-top: 23px;
+  }
+  .modal {
+    display: block;
+    max-height: 90vh;
+  }
+  .modalImagem, .modalImagem img {
+    min-height: 180px;
+    height: 180px;
+  }
+  .modalConteudo {
+    padding: 23px 20px; 
+  }
+  .modalConteudo h2 {
+    font-size: 22px; 
+  }
+}
+
+.input::-webkit-search-cancel-button,
+.input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
